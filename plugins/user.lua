@@ -8,5 +8,17 @@ return {
   --   config = function()
   --     require("lsp_signature").setup()
   --   end,
-  -- },
+  --
+    { "catppuccin/nvim",
+        name = "catppuccin"
+    },
+    {
+        "~whynothugo/lsp_lines.nvim",
+        as = "lsp_lines",
+        lazy = false,
+        url = "https://github.com/ErichDonGubler/lsp_lines.nvim",
+        config = function()
+          require("lsp_lines").setup()
+        end,
+    }
 }
